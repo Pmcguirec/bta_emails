@@ -13,7 +13,7 @@
   }
   .title{
     font-size: 27px;
-    text-align: justify;
+    text-align: center;
     padding: 1px 27px 0px 27px;
   }
   .title-link{
@@ -24,7 +24,7 @@
   .justify{
     text-align: justify;
   }
-  .buttom-bta{
+  .button-bta{
     border-radius: 3px; 
     background: white; 
     padding: 18px; 
@@ -32,7 +32,14 @@
     color: #00adb5;
     font-size: 20px;
     font-weight: 400;
-    font-family: "proxima-nova, Helvetica, sans-serif";"
+    font-family: "proxima-nova, Helvetica, sans-serif";
+    margin-bottom: -10px;
+    margin-left: 129px;
+    margin-right: 90px;
+  }
+  .button-bta:hover {
+    background-color: #03AFB5;
+    color: white;
   }
   .td-link{
     color: white;
@@ -46,6 +53,19 @@
     padding-top: 100px;
     padding-bottom: 10px;
   }
+  .footer {
+    padding-top:15px;
+    margin-top:50px;
+    color:#b3b3b1;
+    font-size:12px;
+    text-align:center;
+    border-top:1px solid #e5e5e5;
+  }
+  .link-footer {
+    color:#b3b3b1;
+    text-decoration:none;
+  }
+
 </style>
 
 <body>
@@ -55,43 +75,48 @@
         <tr>
           <td valign="top" width="100%" bgcolor="#F0F0F0">
             <table align="center" width="570" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
-              <tbody>                
-                <tr class='header' cols>
+              <tbody>
+                <tr class='header'>
                   <td>
                     <img class="img-logo" src="assets/images/logo-blanco.png" alt="">
                   </td>
                   <td class="td-menu">
-                    <a href="#" class="td-link">Cursos</a>
-                    <a href="#" class="td-link">Blog</a>
-                    <a href="#" class="td-link">Entrar</a>
-                  </td>                
+                    <a href="http://backtrackacademy.com/cursos" class="td-link">Cursos</a>
+                    <a href="http://backtrackacademy.com/blog" class="td-link">Blog</a>
+                    <a href="http://backtrackacademy.com/users/sign_in" class="td-link">Entrar</a>
+                  </td>
                 </tr>
+                
                 <tr>
-                <td style="padding:50px 50px 0px 50px" colspan="2">
+
+                  <td style="padding:50px 50px 0px 50px" colspan="2">
+
                     <img src="assets/images/bienvenido.png">
-                    <h2 class='title'>
-                      <%= @user.nombre_completo %>:<br>, bienvenido a  <a href="https://www.backtrackacademy.com" class="title-link">Backtrack Academy</a>
-                    </h2>
+                    <div class="text">
+                      <h2 class='title'>
+                        <!--  <%= @user.nombre_completo %> -->Felipe Barrios, bienvenido a  <a href="https://www.backtrackacademy.com" class="title-link">Backtrack Academy</a>
+                      </h2>
 
-                    <p class="justify">  Gracias por unirte a nuestra comunidad. Desde hoy formas parte de este gran proyecto donde aprenderás sobre seguridad informática de forma colaborativa.
-                    </p>
-                    <p class="justify">
-                      Puedes comenzar a estudiar nuestros <a href="https://www.backtrackacademy.com/cursos/gratis" class="title-link">cursos gratis</a> y también adquiriendo tu <a href="https://www.backtrackacademy.com/suscripcion" class="title-link">suscripción PRO</a>, puedes obtener conocimiento avanzado y a su vez contribuir en nuevos cursos y más contenido.
-                    </p>
-                    <br>
-                    <br>
-                    <div class="row text-center" style="margin-left: 129px; margin-right: 90spx;">
-                      <form action="https://backtrackacademy.com" method="get" style=" box-sizing: border-box;">
-                        <div class="actions" style="display: block;">
-                          <button type="submit" class="buttom-bta">
-                            <i class="fa fa-plus"></i> <b>Comienza ahora</b>
-                          </button>
-                        </div>
-                      </form>
+                      <p class="justify"> Desde hoy formas parte de este gran proyecto donde aprenderás sobre seguridad informática de forma colaborativa.
+                      </p>
+
+                      <p class="justify">
+                        Puedes comenzar a estudiar nuestros <a href="https://www.backtrackacademy.com/cursos/gratis" class="title-link">cursos gratis</a> y también adquiriendo tu <a href="https://www.backtrackacademy.com/suscripcion" class="title-link">suscripción PRO</a>, puedes obtener conocimiento avanzado y a su vez contribuir en nuevos cursos y más contenido.
+                      </p>
+
                       <br>
+                        <button type="submit" class="button-bta">
+                        <b>Comienza ahora</b>
+                        </button>
                     </div>
-
-                    <hr  width="100%">
+                    <div class="footer">
+                      <a href="https://backtrackacademy.com/" class="link-footer">© <!-- <%= Date.current.year %> -->2017 <b>Backtrack Academy</b>  · Proyecto apoyado por <b>Corfo</b>, ubicados en <b>Chile</b> y <b>México</b>. </a>
+                      <br><a href="https://backtrackacademy.com/trabajos" class="link-footer">Empleos</a>  · 
+                      <a href="https://backtrackacademy.com/store" class="link-footer">Tienda virtual</a>  ·
+                      <a href="https://backtrackacademy.com/advertisements" class="link-footer">Información sobre anuncios</a>  · 
+                      <a href="https://backtrackacademy.com/preguntas" class="link-footer">Condiciones</a>  ·
+                      <a href="https://backtrackacademy.com/security" class="link-footer">Hall Of Fame</a>
+                    </div><br>
                   </td>
                 </tr>           
               </tbody>

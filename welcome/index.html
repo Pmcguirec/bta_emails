@@ -17,7 +17,7 @@
     padding: 1px 27px 0px 27px;
   }
   .title-link{
-    color: #03AFB5;
+    color: #00adb5;
     text-decoration: none;
     position: relative;
   }
@@ -31,15 +31,16 @@
     border: 2px solid #00adb5;
     color: #00adb5;
     font-size: 20px;
-    font-weight: 400;
-    font-family: "proxima-nova, Helvetica, sans-serif";
+    text-transform: uppercase;
+    
     margin-bottom: -10px;
     margin-left: 129px;
     margin-right: 90px;
   }
   .button-bta:hover {
-    background-color: #03AFB5;
-    color: white;
+    background-color: black;
+    border-color: transparent;
+    color: #00adb5;
   }
   .td-link{
     color: white;
@@ -52,6 +53,19 @@
     width: 150px; 
     padding-top: 100px;
     padding-bottom: 10px;
+  }
+  .check-img {
+    float: left;
+    margin-right: 4px;
+    width: 21px;
+    margin-left: 38px;
+  }
+  .character {
+    font-size: 15px;
+  }
+  .hr {
+    border: 0;
+    border-top: 1px solid #eee;
   }
   .footer {
     padding-top:15px;
@@ -103,11 +117,22 @@
                       <p class="justify">
                         Puedes comenzar a estudiar nuestros <a href="https://www.backtrackacademy.com/cursos/gratis" class="title-link">cursos gratis</a> y también adquiriendo tu <a href="https://www.backtrackacademy.com/suscripcion" class="title-link">suscripción PRO</a>, puedes obtener conocimiento avanzado y a su vez contribuir en nuevos cursos y más contenido.
                       </p>
+                      <br>
+                      <hr class="hr" width="450">
+                      <br>
+
+                      <p class="character"><img class="check-img" src="assets/images/check.png">TODO EL <a href="https://www.backtrackacademy.com/certificate" class="title-link">CONTENIDO</a> EN UN SOLO LUGAR.</p>
+                      <img class="check-img" src="assets/images/check.png">
+                      <p class="character">ATENDEMOS TODAS TUS <a href="https://www.backtrackacademy.com/debates" class="title-link">INQUIETUDES</a>.</p>
+                      <img class="check-img" src="assets/images/check.png">
+                      <p class="character">PARTICIPA EN EL <a href="https://www.backtrackacademy.com/ranking" class="title-link">RANKING</a> DE HACKERS.</p>
+                      <img class="check-img" src="assets/images/check.png">
+                      <p class="character">TIENES 3 <a href="https://www.backtrackacademy.com/suscripcion" class="title-link">OPORTUNIDADES</a> PARA DAR EXÁMENES.</p>
 
                       <br>
-                        <button type="submit" class="button-bta">
+                      <button type="submit" class="button-bta">
                         <b>Comienza ahora</b>
-                        </button>
+                      </button>
                     </div>
                     <div class="footer">
                       <a href="https://backtrackacademy.com/" class="link-footer">© <!-- <%= Date.current.year %> -->2017 <b>Backtrack Academy</b>  · Proyecto apoyado por <b>Corfo</b>, ubicados en <b>Chile</b> y <b>México</b>. </a>
